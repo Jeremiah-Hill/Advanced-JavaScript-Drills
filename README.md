@@ -108,7 +108,7 @@ Your code should look similar to:
 
 12. Declare favFruit using the let keyword in the printFruits function
 
-let favFruit = fruits[2];
+              let favFruit = fruits[2];
 
 13. Save and refresh the browser. favFruit is no longer in the global scope so printFavFruit() does not have access to the favFruit variable and is now undefined.
 
@@ -122,10 +122,10 @@ let favFruit = fruits[2];
         function printFavFruit() {
         console.log(favFruit);
           }
-          }
+         }
 
-printFruits();
-// printFavFruit(); // can no longer call this here
+              printFruits();
+              // printFavFruit(); // can no longer call this here
 
 15. Call the printFavFruit function inside printFruits function
 
