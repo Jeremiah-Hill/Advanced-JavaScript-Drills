@@ -31,14 +31,13 @@ This is the effect of hoisting. When the browser interprets our JavaScript code 
 
 8.Inside the setName function write the following code and then call it BEFORE the function is declared
 
-<setName();
+setName();
 function setName() {
     var name = 'Covalence';
     console.log(name);
 
 }
->
-"What do you expect to be logged in the console?"
+*What do you expect to be logged in the console?*
 
 9. Save and refresh the browser
   -The value logged is the value for name.
@@ -57,7 +56,7 @@ function findAvg(a, b) {
     return answer;
 }
 
-"In what order will the logs be printed in the console?"
+*In what order will the logs be printed in the console?*
 
 Now that we have exercised hoisting, let's practice scoping.
 
@@ -97,7 +96,7 @@ printFavFruit();
 
 10. Save and refresh the browser.
 
-"Why was the printFavFruit function able to log favFruit?"
+*Why was the printFavFruit function able to log favFruit?*
 
 11. Remove the declaration of favFruit in the global scope
 
