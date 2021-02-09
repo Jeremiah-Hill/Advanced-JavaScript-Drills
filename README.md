@@ -125,7 +125,7 @@ Your code should look similar to:
          }
 
         printFruits();
-        // printFavFruit(); // can no longer call this here
+        *// printFavFruit(); // can no longer call this here*
 
 15. Call the printFavFruit function inside printFruits function
 
