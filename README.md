@@ -31,13 +31,13 @@ This is the effect of hoisting. When the browser interprets our JavaScript code 
 
 8.Inside the setName function write the following code and then call it BEFORE the function is declared
 
-setName();
+<setName();
 function setName() {
     var name = 'Covalence';
     console.log(name);
 
 }
-
+>
 "What do you expect to be logged in the console?"
 
 9. Save and refresh the browser
