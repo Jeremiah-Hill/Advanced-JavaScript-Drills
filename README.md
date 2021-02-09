@@ -62,7 +62,7 @@ This is the effect of hoisting. When the browser interprets our JavaScript code 
 
 *In what order will the logs be printed in the console?*
 
-Now that we have exercised hoisting, let's practice scoping.
+[h2]Now that we have exercised hoisting, let's practice scoping.[/h2]
 
 1. Create an array called fruits
 
