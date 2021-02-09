@@ -12,9 +12,9 @@ Hoisting and Functions
 
 3. Log the value of name to the console
 
-name = 'Covalence';
-var name;
-console.log(name);
+       name = 'Covalence';
+        var name;
+        console.log(name);
 
 "What do you expect to be logged?"
 
@@ -31,12 +31,12 @@ This is the effect of hoisting. When the browser interprets our JavaScript code 
 
 8.Inside the setName function write the following code and then call it BEFORE the function is declared
 
-setName();
+    setName();
 
-function setName() {
+    function setName() {
     var name = 'Covalence';
     console.log(name);
-}
+    }
 
 *What do you expect to be logged in the console?*
 
@@ -48,17 +48,17 @@ function setName() {
 
 11. Add console logs to monitor each stage. Your code should look similar to:
 
-console.log('some text');
+        console.log('some text');
 
-let avg = findAvg(2, 2);
+        let avg = findAvg(2, 2);
 
-console.log('some text', avg);
+        console.log('some text', avg);
 
-function findAvg(a, b) {
-    console.log('some text');
-    var answer = ( a + b) / 2;
-    return answer;
-}
+        function findAvg(a, b) {
+        console.log('some text');
+        var answer = ( a + b) / 2;
+        return answer;
+        }
 
 *In what order will the logs be printed in the console?*
 
@@ -84,22 +84,21 @@ Now that we have exercised hoisting, let's practice scoping.
 
 Your code should look similar to:
 
-let fruits = ['apple', 'tomato', 'banana'];
+    let fruits = ['apple', 'tomato', 'banana'];
 
-let favFruit;
+    let favFruit;
 
-function printFruits() {
+    function printFruits() {
     favFruit = fruits[2];
     console.log(fruits[0]);
-}
+     }
 
-function printFavFruit() {
+    function printFavFruit() {
     console.log(favFruit);
-}
+    }
 
-printFruits();
-
-printFavFruit();
+    printFruits();
+    printFavFruit();
 
 10. Save and refresh the browser.
 
@@ -115,15 +114,15 @@ let favFruit = fruits[2];
 
 14. Nest the printFavFruit function inside of the printFruits function.
 
-function printFruits() {
+        function printFruits() {
 
-    let favFruit = fruits[2];
-    console.log(fruits[0]);
+        let favFruit = fruits[2];
+        console.log(fruits[0]);
 
-    function printFavFruit() {
+        function printFavFruit() {
         console.log(favFruit);
-    }
-}
+          }
+          }
 
 printFruits();
 // printFavFruit(); // can no longer call this here
@@ -142,11 +141,11 @@ printFruits();
 
 21. Create a new function and name the function whatever you would like, make sure to create this using the function keyword, have this function console.log “Hello, “ and then your name. Call this function BEFORE the function body. Example:
 
-someFunc();
+        someFunc();
 
-function someFunc() {
+        function someFunc() {
 
-}
+        }
 
 *You’ll notice the function runs no problem, because the function is hoisted*
 
